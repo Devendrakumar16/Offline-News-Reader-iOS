@@ -14,7 +14,7 @@ struct OfflineNewsAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewsListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
